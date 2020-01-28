@@ -17,7 +17,7 @@ body {
 }
 
 #card-deck {
-  background:#AFC253;
+  background: #090909;
   position: fixed;
   overflow: hidden;
   width: 100%;
@@ -55,8 +55,39 @@ h2{
   font-weight: 500;
 }
 
+p{
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
 .thelogo{
-  width: 100px;
+  width: 200px;
   margin: 20px auto;
 }
 
+
+.cta{
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 20px auto 0;
+  text-decoration: none;
+  transition: .5s all;
+}
+.cta:hover{
+  background-color: red;
+}
+
+
+.code_color{
+  fill: white;
+}
+
+.text-color{
+  fill: red;
+}

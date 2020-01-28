@@ -5,15 +5,6 @@ import { useGesture } from 'react-use-gesture'
 import Logo from './Logo'
 import './styles.css'
 
-const cards = [
-  'https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg'
-]
-
 
 const Card = ( {title, answer}) => {
   return (
@@ -21,6 +12,7 @@ const Card = ( {title, answer}) => {
     <Logo />
     <h2>{title}</h2>
     <p>{answer}</p>
+    <a href='https://wwww.google.com' className='cta'>view article</a>
     </div>
   )
 }
@@ -64,7 +56,7 @@ const Deck = () => {
   return props.map(({ x, y, rot, scale }, i) => (
     <animated.div key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
       {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
-      <animated.div {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundColor: `#373635`}} >
+      <animated.div {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundColor: `#000`}} >
             {divCards[i]}
         </animated.div>
     </animated.div>
